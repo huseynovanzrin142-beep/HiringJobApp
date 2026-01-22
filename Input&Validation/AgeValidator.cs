@@ -21,7 +21,7 @@ public class AgeValidator
     public AgeValidator CheckAge(string input)
     {
         int age = int.Parse(input);
-        if (age < 0 || age > 150)
+        if (age < 0 || age > 100)
         {
             throw new InvalidAgeException("Age cannot be less than 0 or greater than 150.");
         }
@@ -29,4 +29,5 @@ public class AgeValidator
         return this;
     }
 }
+
 
